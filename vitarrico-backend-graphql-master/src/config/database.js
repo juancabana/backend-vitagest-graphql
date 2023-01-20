@@ -2,10 +2,10 @@ import {connect} from 'mongoose';
 
 const connectDB = async () => {
     try {
-        await connect('mongodb+srv://alexander:123Alex2022@cluster0.wscup.mongodb.net/vitarrico', {
+        await connect('mongodb://localhost:27017/', {
             useNewUrlParser: true,
             useUnifiedTopology: true,
-            useFindAndModify: false,
+            useFindAndModify: true,
             useCreateIndex: true,
           });
           console.log('DB Connected');
