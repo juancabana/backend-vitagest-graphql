@@ -5,7 +5,7 @@ const connectDB = async () => {
         await connect('mongodb://localhost:27017/', {
             useNewUrlParser: true,
             useUnifiedTopology: true,
-            useFindAndModify: true,
+            useFindAndModify: false,
             useCreateIndex: true,
           });
           console.log('DB Connected');
